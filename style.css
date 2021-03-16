@@ -1,0 +1,111 @@
+/* NAVIGATION */
+
+body {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    background-color: white; /*#fffbf7*/
+}
+#header {
+    height: 40px;
+    font-size: 30px;
+    background-color: #B9E5C1;
+    padding-left:10px;
+    padding-top:10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #752222;
+    color:white;
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #d48686;
+}
+li a.active {
+    color: white;
+    background-color: #cb161d;
+}
+
+
+/* MENU */
+.menu_img{
+    width: 150px;
+    height: 150px;
+}
+
+.menuCatTitle {
+    background-color: #752222;
+    height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    text-shadow: goldenrod 1px 1px;
+    font-size:24px;
+}
+.menuItemTitle{
+    background-color: #752222;
+    height: 20px;
+    color: white;
+    text-align: center;
+}
+.menuItemContent {
+    background-color: rgb(238, 214, 153);
+    border: goldenrod 10px ridge;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    padding: 10px;
+    height: 200px;
+    
+}
+
+.menuItemImg {
+    height:100px;
+    width:100px;
+}
+.imgSpan{
+    float:left;
+}
+.detSpan{
+    float:right;
+    width: 60%;
+}
+.menuItemContent button{
+    float: right;
+    background-color: #752222;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ORDERS */
+
+.orderItem {
+    border: #752222 groove 5px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.order {
+    border: goldenrod ridge 10px;
+    width: 80%;
+    padding: 5px;
+    background-color: rgb(238, 214, 153);
+    margin-bottom: 10px;
+}

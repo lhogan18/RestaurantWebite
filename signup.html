@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!--script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script-->
+
+    <!-- language scripts -->
+    <script src="en.js"></script>
+    <script src="es.js"></script>
+    <script src="fr.js"></script>
+    <script src="pt.js"></script>
+
+
+    <!-- main javascript -->
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    <select id="langselect" onchange="loadLangSignUp()">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="pt">Portuguese</option>
+    </select>
+    <main id="main-holder">
+        <h1 id="signup-header">Create Account</h1>
+        
+        <div id="signup-error-msg-holder">
+          <p id="signup-error-msg">Invalid</p>
+        </div>
+        
+        <form id="signup-form">
+          <input type="text" name="username" id="signup-username-field" class="signin-form-field" placeholder="Username">
+          <input type="password" name="password" id="signup-password-field" class="signin-form-field" placeholder="Password">
+          <input onclick="createAccount()" type="button" value="Sign Up" id="signup-form-submit">
+        </form>
+        <p id="gotosigninbtn"onclick="goToSignIn()">Already Have An Account?</p>  
+    </main>
+</body>
+
+</html>
