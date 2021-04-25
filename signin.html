@@ -29,39 +29,42 @@
 
 
     <script>
-        firebase.auth().onAuthStateChanged(function(user){
+        /* firebase.auth().onAuthStateChanged(function(user){
             if(user){   //if user already logged in, then auto redirect to menu page
                 window.location.href = "menu.html";
             }
-        });
+        }); */
     </script>
 
 </head>
 
 
 
-<body onload="loadLangSignIn()">
+<body onload="loadLangSignIn()" class="signin-body">
     <select id="langselect" onchange="loadLangSignIn()">
         <option value="en">English</option>
-        <option value="es">Spanish</option>
-        <option value="fr">French</option>
-        <option value="pt">Portuguese</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="pt">Português</option>
     </select>
+    <br>
 
-
+    <h1 id="restaurant-title">Burger Joint</h1>
+    <img id="login-img" src="images/fastfood-2.png">
     <main id="main-holder">
         <h1 id="signin-header">Sign In</h1>
         
-        <div id="signin-error-msg-holder">
+        <div id="signin-error-msg-holder" style="display:none">
           <p id="signin-error-msg">Invalid Input</p>
         </div>
         
         <form id="signin-form">
-          <input type="text" name="username" id="signin-username-field" class="signin-form-field" placeholder="Username">
-          <input type="password" name="password" id="signin-password-field" class="signin-form-field" placeholder="Password">
-          <input onclick="signIn()" type="button" value="Sign In" id="signin-btn">
+          <input type="text" name="username" id="signin-phone-field" class="signin-form-field" placeholder="Phone Number"><br><br>
+          <input type="password" name="password" id="signin-password-field" class="signin-form-field" placeholder="Password"><br><br>
+          <input onclick="signIn()" type="button" value="Sign In" id="signin-btn"  class="signin-btn">
         </form>
-        <p id="gotosignupbtn" onclick="goToSignUp()">Create A New Account</p>  
+        <p id="gotosignupbtn" onclick="goToSignUp()" style="cursor:pointer">Create A New Account</p> 
+        <p id="guestlogin" onclick="guestLogin()" style="cursor:pointer">Guest</p> 
     </main>
 </body>
 </html>

@@ -1,16 +1,17 @@
-fr = {
+fr = { 
+    lang: "fr",
     hello: "Bonjour",
     restaurant: "Restaurant",
     menu: "Menu",
     order: "Commande",
     orders: "Commandes",
-    place_order: "Commande",
+    place_order: "Passer la Commande",
     my: "Ma",
-    add: "Ajoute",
-    add_to_cart: "Ajoute au Panier",
+    add: "Ajouter",
+    add_to_cart: "Ajouter au Panier",
     cart: "Panier",
     sign_in: "Se Logger",
-    sign_up: "S'Enregitrer",
+    sign_up: "S'Enregistrer",
     sign_out: "Se Déconnecter",
     create_account: "Créez un Compte",
     email: "Email",
@@ -22,5 +23,14 @@ fr = {
     total_price: "Prix Total",
     quantity: "Quantité",
     name: "Nom",
-    address: "Adresse"
+    address: "Adresse",
+    status: "Statut",
+    remove: "Retirer",
+    currency_symbol: "€",
+    currency: "EUR",
+    currency_rate: 0.84,
+    comment: "Commentaire",
+    guest: "Invité",
+    home: "Domicile",
+    view_orders: "Affichage des commandes"
 }

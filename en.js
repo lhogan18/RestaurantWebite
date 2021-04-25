@@ -1,4 +1,5 @@
 en = {
+    lang: "en",
     hello: "Hello",
     restaurant: "Restaurant",
     menu: "Menu",
@@ -11,7 +12,7 @@ en = {
     cart: "Cart",
     sign_in: "Sign In",
     sign_up: "Sign Up",
-    sign_out: "Sign Out",
+    sign_out: "Log Out",
     create_account: "Create Account",
     email: "Email",
     phone: "Phone",
@@ -22,5 +23,14 @@ en = {
     total_price: "Total Price",
     quantity: "Quantity",
     name: "Name",
-    address: "Address"
+    address: "Address",
+    status: "Status",
+    remove: "Remove",
+    currency_symbol: "$",
+    currency: "USD",
+    currency_rate: 1,    //currency rate compared to USD
+    comment: "Comment",
+    guest: "Guest",
+    home: "Home",
+    view_orders: "View Orders"
 }

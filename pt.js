@@ -1,17 +1,18 @@
 pt = {
+    lang: "pt",
     hello: "Olá",
     restaurant: "Restaurante",
     menu: "Cardápio",
     order: "Pedido",
     orders: "Pedidos",
-    place_order: "Fazer Pedido",
+    place_order: "Fazer um Pedido",
     my: "Meu",
     add: "Adicionar",
-    add_to_cart: "Adicionar ae Carrinho",
+    add_to_cart: "Adicionar ao Carrinho",
     cart: "Carrinho",
     sign_in: "Entrar",
     sign_up: "Increver-se",
-    sign_out: "Assinar",
+    sign_out: "Sair",
     create_account: "Criar Conta",
     email: "Email",
     phone: "Telefone",
@@ -22,5 +23,14 @@ pt = {
     total_price: "Preço Total",
     quantity: "Quantidade",
     name: "Nome",
-    address: "Morada"
+    address: "Morada",
+    status: "Status", 
+    remove: "Retirar",
+    currency_symbol: "€",
+    currency: "EUR",
+    currency_rate: 0.84,
+    comment: "Comentário", 
+    guest: "Convidado",
+    home: "Página Inicial",     //this is home page in computing
+    view_orders: "Visualizar Pedidos"
 }

@@ -21,11 +21,11 @@
     <script src="script.js"></script>
 
     <script>
-        firebase.auth().onAuthStateChanged(function(user){
+        /* firebase.auth().onAuthStateChanged(function(user){
             if(!user){   //if user not logged in, then auto redirect to signin page
                 window.location.href = "signin.html";
             }
-        });
+        }); */
         var counter = 0;
     </script>
 
@@ -34,17 +34,18 @@
 <body onload="loadOrdersPage()">
     <select id="langselect" onchange="loadLangOrders()">
         <option value="en">English</option>
-        <option value="es">Spanish</option>
-        <option value="fr">French</option>
-        <option value="pt">Portuguese</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="pt">Português</option>
     </select>
     <div id="header">
-        Restaurant
+        Burger Joint
     </div>
     <div id="nav">
         <ul>
             <li><a id="nav-menu" href="menu.html">Menu</a></li>
-            <li><a id="nav-orders" href="orders.html" class="active btn">Orders</a></li>
+            <li><a id="nav-orders" href="orders.html" class="active btn">Orders</a></li>            
+            <li><a id="nav-cart" href="cart.html">Cart</a></li>
             <li><a id="nav-signout" href="signin.html" onclick="signOut()">Sign Out</a></li>
         </ul>
     </div>

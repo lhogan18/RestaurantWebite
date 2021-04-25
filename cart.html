@@ -15,7 +15,7 @@
     <script src="es.js"></script>
     <script src="fr.js"></script>
     <script src="pt.js"></script>
-    
+
 
     <!-- main javascript -->
     <script src="script.js"></script>
@@ -29,10 +29,11 @@
         var counter = 0;
     </script>
 
-    <title>Menu</title>
+    <title>Cart</title>
 </head>
-<body onload="loadMenuPage()">
-    <select id="langselect" onchange="loadLangMenu()">
+
+<body >
+    <select id="langselect" onchange="loadLangCart()">
         <option value="en">English</option>
         <option value="es">Español</option>
         <option value="fr">Français</option>
@@ -43,16 +44,41 @@
     </div>
     <div id="nav">
         <ul>
-            <li><a id="nav-menu" href="menu.html" class="active btn">Menu</a></li>
-            <li><a id="nav-orders" href="orders.html">Orders</a></li>
-            <li><a id="nav-cart" href="cart.html" >Cart</a></li>
+            <li><a id="nav-menu" href="menu.html">Menu</a></li>
+            <li><a id="nav-orders" href="orders.html" >Orders</a></li>
+            <li><a id="nav-cart" href="cart.html" class="active btn">Cart</a></li>
             <li><a id="nav-signout" href="signin.html" onclick="signOut()">Sign Out</a></li>
         </ul>
     </div>
+    <div id="content">
+        <h2 id="cart-title" class="menuCatTitle">Cart</h2>
+        <!--button onclick="loadCartPage()">Show Cart</button-->
+       
+        <div id="cart-form">
+            <label id='cart-name-label'>Name</label>
+            <input class='cart-field' id='cart-name-field'><br>
+            <label id='cart-phone-label'>Phone Number</label>
+            <input class='cart-field' id='cart-phone-field'><br>
+            <label id='cart-address-label'>Address</label>
+            <input class='cart-field' id='cart-address-field'><br>
+            <label id='cart-comments-label'>Comments</label><br>
+            <textarea id='cart-comments-field'></textarea><br>
+            
+            <button id="submit-cart-btn" class="cartBtn" onclick="submitCartOrder()">Check Out</button>
 
-    <div id="menu" class="content">
-      
+        </div>
+
+        <h2>Items</h2>
+        
+        <div id="cart-div">
+        </div>
+
+        <button id="calc-cart-total" class="cartBtn" onclick="calcCartTotal()">Calculate Total</button>
     </div>
-    <div id="content"></div>
+
+    <script>
+        loadCartPage()
+        isSignedIn()
+    </script>
+
 </body>
-</html>

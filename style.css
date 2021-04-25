@@ -3,14 +3,21 @@
 body {
     color: black;
     font-family: Helvetica, sans-serif;
-    background-color: white; /*#fffbf7*/
+    background-color:white; /*#fffbf7*/
 }
 #header {
-    height: 40px;
-    font-size: 30px;
+    height: 100px;
+    color: white;
+    text-shadow:rgb(150, 114, 25) 3px 3px;
+    font-size: 70px;
     background-color: #B9E5C1;
     padding-left:10px;
     padding-top:10px;
+    background-image: url(https://i.ibb.co/zR3zBCB/rodeo-burger.png);
+    background-size: 100%;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+
 }
 
 ul {
@@ -65,7 +72,7 @@ li a.active {
 }
 .menuItemContent {
     background-color: rgb(238, 214, 153);
-    border: goldenrod 10px ridge;
+    border: goldenrod 6px ridge;
     width: 300px;
     display: inline-block;
     vertical-align: top;
@@ -97,15 +104,130 @@ li a.active {
 /* ORDERS */
 
 .orderItem {
-    border: #752222 groove 5px;
+    border: #752222 groove 3px;
     margin: 2px;
     padding: 5px;
 }
 
 .order {
-    border: goldenrod ridge 10px;
-    width: 80%;
+    border: goldenrod ridge 6px;
     padding: 5px;
     background-color: rgb(238, 214, 153);
     margin-bottom: 10px;
+}
+.price {
+    float:right;
+}
+.priceTitle{
+    float:right;
+}
+
+
+/* CART */
+#cart-div {
+    margin-top:10px;
+}
+.cartItem {
+    border: goldenrod ridge 6px;
+    padding: 5px;
+    background-color: rgb(238, 214, 153);
+    margin-bottom: 10px;
+    height: 50px;
+
+}
+.cartItem img {
+    width: 50px;
+    height: 50px;
+    float:left;
+    margin-right: 10px;
+}
+.cartItem .item-name {
+    color: black;
+    font-size: 16px;
+    float:left;
+}
+.cartItem .item-price {
+    color: black;
+    float:right;
+    font-size: 20px;
+}
+.currency-symb{
+    color: black;
+    float:right;
+    font-size: 20px;
+}
+
+.cartBtn {
+    background-color: #752222;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.rmBtn {
+    background-color: rgb(238, 214, 153);
+    color: #752222;
+    cursor: pointer;
+    margin-top:6px;
+}
+
+
+#cart-form{
+    border: goldenrod ridge 6px;
+    padding: 5px;
+    background-color: rgb(238, 214, 153);
+    margin-bottom: 10px;
+}
+.cart-field{
+    margin: 5px;
+    left: 100px;
+}
+
+#cart-form textarea{
+    resize:none;
+    width: 40%;
+    height: 50px;
+}
+
+
+/*sign in*/
+#login-img{
+    width: 200px;
+    position:absolute;
+    left:50px;
+    top:85px;
+}
+#main-holder{
+    background-color:white;
+    width: 250px;
+    position: absolute;
+    top:20px;
+    left: 280px;
+    padding: 15px;
+    margin:20px;
+    box-shadow: 5px 5px 15px rgb(1, 26, 7);
+    border: ridge 10px #752222;
+    border-radius: 10px;
+
+}
+.signin-body{
+    background-color: rgb(216, 240, 219);
+}
+#restaurant-title{
+    color: #752222;
+    text-shadow:rgb(116, 88, 18) 1px 2px;
+    font-size: 40px;
+    position:absolute;
+    top:260px;
+    left:30px;
+}
+.signin-btn{
+    background-color:#752222;
+    color:white;
+    padding:5px;
+    border:ridge #752222 2px;
+    cursor:pointer;
+}
+.signin-btn:active{
+    box-shadow: inset 0px 0px 5px #c1c1c1;
 }

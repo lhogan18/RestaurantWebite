@@ -26,29 +26,35 @@
 
     <!-- main javascript -->
     <script type="text/javascript" src="script.js"></script>
+    
 
 </head>
 
-<body>
+<body class="signin-body">
     <select id="langselect" onchange="loadLangSignUp()">
         <option value="en">English</option>
-        <option value="es">Spanish</option>
-        <option value="fr">French</option>
-        <option value="pt">Portuguese</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="pt">Português</option>
     </select>
+    <br>
+
+    <h1 id="restaurant-title">Burger Joint</h1>
+    <img id="login-img" src="images/fastfood-2.png">
     <main id="main-holder">
         <h1 id="signup-header">Create Account</h1>
         
-        <div id="signup-error-msg-holder">
+        <div id="signup-error-msg-holder" style="display:none">
           <p id="signup-error-msg">Invalid</p>
         </div>
         
         <form id="signup-form">
-          <input type="text" name="username" id="signup-username-field" class="signin-form-field" placeholder="Username">
-          <input type="password" name="password" id="signup-password-field" class="signin-form-field" placeholder="Password">
-          <input onclick="createAccount()" type="button" value="Sign Up" id="signup-form-submit">
+          <input type="text" name="username" id="signup-username-field" class="signin-form-field" placeholder="Name"><br><br>
+          <input type="text" name="phone" id="signup-phone-field" class="signin-form-field" placeholder="Phone Number"><br><br>
+          <input type="password" name="password" id="signup-password-field" class="signin-form-field" placeholder="Password"><br><br>
+          <input onclick="createAccount()" type="button" value="Sign Up" id="signup-form-submit" class="signin-btn">
         </form>
-        <p id="gotosigninbtn"onclick="goToSignIn()">Already Have An Account?</p>  
+        <p id="gotosigninbtn"onclick="goToSignIn()" style="cursor:pointer">Already Have An Account?</p>  
     </main>
 </body>
 
